@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Status Bar</title>
+
+<style>
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+button{
+padding:12px 25px;
+font-size:16px;
+}
+</style>
+
+<script>
+function over(){
+document.getElementById("btn").onmouseover = function(){
+window.status="Mouse over button";
+return true;
+}
+}
+
+function out(){
+window.status="Mouse out";
+return true;
+}
+
+function clickb(){
+window.status="Button clicked";
+return true;
+}
+</script>
+
+</head>
+
+<body onload="over()">
+
+<button id="btn" onmouseout="out()" onclick="clickb()">
+Click Me
+</button>
+
+</body>
+</html>

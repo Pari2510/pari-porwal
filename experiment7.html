@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <script>
+    function checkLogin() {
+      let user = document.getElementById("user").value;
+      let pass = document.getElementById("pass").value;
+
+      if (pass === "admin123") {
+        window.open("welcome.html", "_blank");
+      } else {
+        alert("Incorrect Password");
+      }
+    }
+  </script>
+</head>
+<body>
+
+<h2>Login</h2>
+
+Username:
+<input type="text" id="user"><br><br>
+
+Password:s
+<input type="password" id="pass"><br><br>
+
+<button onclick="checkLogin()">Login</button>
+
+</body>
+</html>s
